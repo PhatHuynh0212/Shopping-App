@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 70px;
+    background: yellow;
+}
+
+header .logo {
+    display: flex;
+    flex: 1;
+}
+
+header .menu {
+    display: flex;
+    gap: 40px;
+    flex: 3;
+}
+
+.menu > li {
+    position: relative;
+}
+
+.menu > li:hover .submenu {
+    visibility: visible;
+    top: 30px;
+}
+
+.submenu {
+    top: 50px;
+    visibility: hidden;
+    position: absolute;
+    width: 150px;
+    background-color: #fff;
+    border: 1px solid #c6c6c6;
+    padding: 10px 0 10px 20px;
+    transition: .2s;
+}
+
+.submenu > li > a {
+    line-height: 1.7;
+    font-weight: normal;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.submenu ul {
+    padding-left: 15px;
+}
+
+.submenu ul li a {
+    font-size: 1.2rem;
+}
+
+.menu > li > a {
+    color: #333;
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: block;
+    line-height: 25px;
+}
+
+.others {
+    display: flex;
+    gap: 15px;
+    flex: 1;
+}
+
+.others li:first-child {
+    position: relative;
+    width: 160px;
+}
+
+.others li:first-child input {
+    width: 150px;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid #333;
+}
+
+.others li:first-child i {
+    position: absolute;
+    right: 12px;
+}
