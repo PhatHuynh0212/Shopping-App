@@ -446,6 +446,7 @@ select {
 }
 
 .product-content-left-small-img {
+    cursor: pointer;
     width: 20%;
 }
 

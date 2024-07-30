@@ -52,6 +52,19 @@ itemsSidebar.forEach(function(menu, index) {
     })
 })
 
+// Products
+
+// Click image o=in product
+
+const bigImg = $('.product-content-left-big-img img')
+const smallImg = $$('.product-content-left-small-img img')
+
+smallImg.forEach(function(img) {
+    img.addEventListener('click', function() {
+        bigImg.src = img.src
+    })
+})
+
 // Tab UI
 
 const tabs = $$(".tab-item");
@@ -79,3 +92,5 @@ tabs.forEach((tab, index) => {
         line.style.width = this.offsetWidth + "px";
     };
 });
+
+
