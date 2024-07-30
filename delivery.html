@@ -30,7 +30,9 @@
         <!-- Header -->
         <header>
             <div class="logo">
-                <a href="./index.html"><img src="./assets/img/logo.svg" alt="logo" /></a>
+                <a href="./index.html"
+                    ><img src="./assets/img/logo.svg" alt="logo"
+                /></a>
             </div>
             <nav class="menu">
                 <li>
@@ -170,159 +172,100 @@
             </div>
         </header>
 
-        <!-- Product -->
-        <section class="product">
+        <!-- Delivery -->
+        <section class="delivery">
             <div class="container">
-                <div class="product-top row">
-                    <p>Trang chủ</p>
-                    <span>&#8594;</span>
-                    <p>Nữ</p>
-                    <span>&#8594;</span>
-                    <p>Đầm ngắn thời trang</p>
-                </div>
-                <div class="product-content row">
-                    <div class="product-content-left row">
-                        <div class="product-content-left-big-img">
-                            <img src="./assets/img/product/pro1.webp" alt="" />
+                <div class="delivery-top-wrap">
+                    <div class="delivery-top">
+                        <div class="delivery-top-delivery delivery-top-item">
+                            <i class="fa-solid fa-cart-shopping"></i>
                         </div>
-                        <div class="product-content-left-small-img">
-                            <img src="./assets/img/product/pro2.webp" alt="" />
-                            <img src="./assets/img/product/pro3.webp" alt="" />
-                            <img src="./assets/img/product/pro4.webp" alt="" />
-                            <img src="./assets/img/product/pro5.webp" alt="" />
+                        <div class="delivery-top-address delivery-top-item">
+                            <i class="fa-solid fa-location-dot"></i>
                         </div>
-                    </div>
-                    <div class="product-content-right">
-                        <div class="product-content-right-name">
-                            <h1>Đầm ngắn thời trang</h1>
-                            <p>MSP: J12313</p>
-                        </div>
-                        <div class="product-content-right-price">
-                            <p>750.000 đ</p>
-                        </div>
-                        <div class="product-content-right-color">
-                            <p>
-                                <span style="font-weight: 600">Màu sắc:</span>
-                                Beige
-                            </p>
-                            <div class="color"></div>
-                        </div>
-                        <div class="product-content-right-size">
-                            <p style="font-weight: bold">Size:</p>
-                            <div class="size">
-                                <span>S</span>
-                                <span>M</span>
-                                <span>L</span>
-                                <span>XL</span>
-                                <span>XXL</span>
-                            </div>
-                        </div>
-                        <div class="quantity">
-                            <p style="font-weight: bold">Số lượng:</p>
-                            <input type="number" min="0" value="1" />
-                        </div>
-                        <p style="color: red">Vui lòng chọn size *</p>
-                        <div class="product-content-right-btn row">
-                            <button class="buy-btn">
-                                <i class="fa-solid fa-cart-shopping"></i>Mua
-                                hàng
-                            </button>
-                            <button>
-                                <i class="fa-solid fa-shop"></i>Tìm tại cửa hàng
-                            </button>
-                        </div>
-
-                        <div class="tabUI">
-                            <!-- Tab items -->
-                            <div class="tabs">
-                                <div class="tab-item active">Giới thiệu</div>
-                                <div class="tab-item">Chi tiết sản phẩm</div>
-                                <div class="tab-item">Bảo quản</div>
-                                <div class="line"></div>
-                            </div>
-
-                            <!-- Tab content -->
-                            <div class="tab-content">
-                                <div class="tab-pane active">
-                                    <p>
-                                        Áo Hoodie mang xu hướng streetstyle,
-                                        giúp bé thể hiện sự cá tính của mình. Áo
-                                        tay dài, cổ mũ, có bo nhẹ ở gấu và cổ
-                                        tay. Thân trước áo in hình ngộ nghĩnh
-                                        với chất liệu màu in mịn, không bai màu,
-                                        độ bền cơ học cao. Mũ áo trang bị dây
-                                        rút điều chỉnh tiện lợi. <br /><br />
-                                        Áo lựa chọn chất liệu thun cao cấp, mềm
-                                        mịn, giữ ấm tốt, an toàn cho da em bé.
-                                    </p>
-                                </div>
-                                <div class="tab-pane">
-                                    <p>Dòng sản phẩm : Boy</p><br>
-                                    <p>Nhóm sản phẩm : Áo</p><br>
-                                    <p>Cổ áo : Cổ mũ</p>
-                                </div>
-                                <div class="tab-pane">
-                                    <p>
-                                        Chi tiết bảo quản sản phẩm : <br /><br />
-                                        <span style="font-weight: 600">
-                                            * Các sản phẩm thuộc dòng cao cấp
-                                            (Senora) và áo khoác (dạ, tweed,
-                                            lông, phao) chỉ giặt khô, tuyệt đối
-                                            không giặt ướt.
-                                        </span>
-                                    </p>
-                                </div>
-                            </div>
+                        <div class="delivery-top-payment delivery-top-item">
+                            <i class="fa-solid fa-credit-card"></i>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+            <div class="container">
+                <div class="delivery-content row">
+                    <div class="delivery-content-left">
+                        <p>Vui lòng chọn địa chỉ giao hàng</p>
+                        <div class="delivery-content-left-dangnhap row">
+                            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                            <p>Đăng nhập nếu bạn có tài khoản Fashion</p>
+                        </div>
+                        <div class="delivery-content-left-khachle row">
+                            <input type="radio" type="checked" name="khach">
+                            <p><span style="font-weight: 600;">Khách lẻ</span> (Nếu bạn không muốn lưu lại thông tin)</p>
+                        </div>
+                        <div class="delivery-content-left-dangky row">
+                            <input type="radio" type="checked" name="khach">
+                            <p><span style="font-weight: 600;">Đăng ký</span> (Tạo mới tài khoản với thông tin bên dưới)</p>
+                        </div>
+                        <div class="delivery-content-left-input-top row">
+                            <div class="delivery-content-left-input-top-item">
+                                <label for="">Họ tên <span style="color:red">*</span></label>
+                                <input type="text" name="" id="">
+                            </div>
+                            <div class="delivery-content-left-input-top-item">
+                                <label for="">Điện thoại <span style="color:red">*</span></label>
+                                <input type="text" name="" id="">
+                            </div>
+                            <div class="delivery-content-left-input-top-item">
+                                <label for="">Tỉnh/Tp <span style="color:red">*</span></label>
+                                <input type="text" name="" id="">
+                            </div>
+                            <div class="delivery-content-left-input-top-item">
+                                <label for="">Quận/Huyện <span style="color:red">*</span></label>
+                                <input type="text" name="" id="">
+                            </div>
+                        </div>
+                        <div class="delivery-content-left-input-bottom row">
+                            <label for="">Địa chỉ <span style="color:red">*</span></label>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div class="delivery-content-left-button row">
+                            <a style="color: #e6d73b;" href="./cart.html">&#171; Quay lại giỏ hàng</a>
+                            <button>THANH TOÁN VÀ GIAO HÀNG</button>
+                        </div>
+                    </div>
 
-        <!-- Relate to product -->
-        <section class="product-related">
-            <div class="product-related-title">
-                <p>Sản phẩm liên quan</p>
-            </div>
-            <div class="product-content-related row">
-                <div class="product-related-item">
-                    <img src="./assets/img/product/sp1.png" alt="">
-                    <p>Áo khoác hoddie thời trang</p>
-                    <div class="price row">
-                        <p style="color: red;">300.000 đ</p>
-                        <p class="sale">450.000 đ</p>
-                    </div>
-                </div>
-                <div class="product-related-item">
-                    <img src="./assets/img/product/sp2.png" alt="">
-                    <p>Áo khoác hoddie thời trang</p>
-                    <div class="price row">
-                        <p style="color: red;">300.000 đ</p>
-                        <p class="sale">450.000 đ</p>
-                    </div>
-                </div>
-                <div class="product-related-item">
-                    <img src="./assets/img/product/sp3.png" alt="">
-                    <p>Áo khoác hoddie thời trang</p>
-                    <div class="price row">
-                        <p style="color: red;">300.000 đ</p>
-                        <p class="sale">450.000 đ</p>
-                    </div>
-                </div>
-                <div class="product-related-item">
-                    <img src="./assets/img/product/sp1.png" alt="">
-                    <p>Áo khoác hoddie thời trang</p>
-                    <div class="price row">
-                        <p style="color: red;">300.000 đ</p>
-                        <p class="sale">450.000 đ</p>
-                    </div>
-                </div>
-                <div class="product-related-item">
-                    <img src="./assets/img/product/sp2.png" alt="">
-                    <p>Áo khoác hoddie thời trang</p>
-                    <div class="price row">
-                        <p style="color: red;">300.000 đ</p>
-                        <p class="sale">450.000 đ</p>
+                    <div class="delivery-content-right">
+                        <table>
+                            <tr>
+                                <th style="font-weight: 600;">Tên sản phẩm</th>
+                                <th style="font-weight: 600;">Giảm giá</th>
+                                <th style="font-weight: 600;">Số lượng</th>
+                                <th style="font-weight: 600;">Thành tiền</th>
+                            </tr>
+                            <tr>
+                                <td>Đầm thời trang</td>
+                                <td>-30%</td>
+                                <td>1</td>
+                                <td>550.000đ</td>
+                            </tr>
+                            <tr>
+                                <td>Áo hoddie thời trang</td>
+                                <td>-20%</td>
+                                <td>1</td>
+                                <td>400.000đ</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 600;" colspan="3">Tổng</td>
+                                <td style="font-weight: 600;">950.000đ</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 600;" colspan="3">Thuế VAT</td>
+                                <td style="font-weight: 600;">95.000đ</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 600;" colspan="3">Tổng tiền hàng</td>
+                                <td style="font-weight: 600;">1.045.000đ</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>

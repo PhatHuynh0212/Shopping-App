@@ -62,27 +62,17 @@ products.forEach(function(product) {
 //     }
 // })
 
-// Click image in product
 
-const bigImg = $(".product-content-left-big-img img");
-const smallImg = $$(".product-content-left-small-img img");
-
-smallImg.forEach(function (img) {
-    img.addEventListener("click", function () {
-        bigImg.src = img.src;
-    });
-});
-
-// Tab UI
+// Tab information product
 
 const tabs = $$(".tab-item");
 const panes = $$(".tab-pane");
 
-// Phải tiến hành lấy chiều dài của tab item để set đường gạch dưới
+// Phải tiến hành lấy chiều dài của tab item để set đường gạch dưới của nó
 const tabActive = $(".tab-item.active");
 const line = $(".tabs .line");
 
-// Line ở tab-item active : React
+// Line ở tab-item active
 line.style.left = tabActive.offsetLeft + "px";
 line.style.width = tabActive.offsetWidth + "px";
 
@@ -101,10 +91,22 @@ tabs.forEach((tab, index) => {
     };
 });
 
+// Click image in product
+
+const bigImg = $(".product-content-left-big-img img");
+const smallImg = $$(".product-content-left-small-img img");
+
+smallImg.forEach(function (img) {
+    img.addEventListener("click", function () {
+        bigImg.src = img.src;
+    });
+});
+
 // Cart page
 
 const btnBuy = $('.buy-btn')
-console.log(btnBuy)
-btnBuy.onclick = function() {
+
+btnBuy.addEventListener('click', function() {
     window.location.href = './cart.html'
-}
+})
+
