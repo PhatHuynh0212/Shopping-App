@@ -52,3 +52,30 @@ itemsSidebar.forEach(function(menu, index) {
     })
 })
 
+// Tab UI
+
+const tabs = $$(".tab-item");
+const panes = $$(".tab-pane");
+
+// Phải tiến hành lấy chiều dài của tab item để set đường gạch dưới
+const tabActive = $(".tab-item.active");
+const line = $(".tabs .line");
+
+// Line ở tab-item active : React
+line.style.left = tabActive.offsetLeft + "px";
+line.style.width = tabActive.offsetWidth + "px";
+
+tabs.forEach((tab, index) => {
+    const pane = panes[index];
+
+    tab.onclick = function () {
+        $(".tab-item.active").classList.remove("active");
+        $(".tab-pane.active").classList.remove("active");
+
+        this.classList.add("active");
+        pane.classList.add("active");
+
+        line.style.left = this.offsetLeft + "px";
+        line.style.width = this.offsetWidth + "px";
+    };
+});
