@@ -9,7 +9,7 @@ const dotItem = $$('.dot')
 let imgNumber = imgPosition.length
 let index = 0;
 
-// Chuyển slide khi bấm vào dot
+// Change slide when click dots
 imgPosition.forEach(function (img, index) {
     img.style.left = index * 100 + "%";
     dotItem[index].onclick = function() {
@@ -32,6 +32,8 @@ function slideChange(index) {
     dotItem[index].classList.add('active')
 }
 
+// Menu fixed
+
 window.addEventListener('scroll', function() {
     x = window.scrollY
     if (x > 0) {
@@ -40,3 +42,13 @@ window.addEventListener('scroll', function() {
         header.classList.remove('sticky')
     }
 })
+
+// Menu sidebar category
+
+const itemsSidebar = $$('.category-left-li')
+itemsSidebar.forEach(function(menu, index) {
+    menu.addEventListener('click', function() {
+        menu.classList.toggle('block')
+    })
+})
+
