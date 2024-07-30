@@ -172,150 +172,85 @@
             </div>
         </header>
 
-        <!-- Category -->
-        <section class="category">
+        <!-- Cart -->
+        <section class="cart">
             <div class="container">
-                <div class="category-top row">
-                    <p>Trang chủ</p>
-                    <span>&#8594;</span>
-                    <p>Nữ</p>
-                    <span>&#8594;</span>
-                    <p>Hàng mới về</p>
+                <div class="cart-top-wrap">
+                    <div class="cart-top">
+                        <div class="cart-top-cart cart-top-item">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="cart-top-address cart-top-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="cart-top-payment cart-top-item">
+                            <i class="fa-solid fa-credit-card"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="container">
-                <div class="row">
-                    <div class="category-left">
-                        <ul>
-                            <li class="category-left-li">
-                                <a href="#!">Nữ</a>
-                                <ul>
-                                    <li><a href="">Hàng nữ mới về</a></li>
-                                    <li><a href="">Beyond Trendy</a></li>
-                                    <li><a href="">Jean for joy</a></li>
-                                    <li><a href="">Quần jean nữ</a></li>
-                                    <li><a href="">Váy, chân váy </a></li>
-                                </ul>
-                            </li>
-                            <li class="category-left-li">
-                                <a href="#!">Nam</a>
-                                <ul>
-                                    <li><a href="">Hàng nam mới về</a></li>
-                                    <li><a href="">Áo vest quần tây</a></li>
-                                    <li><a href="">Quần jean nam</a></li>
-                                    <li><a href="">Đồ lót nam</a></li>
-                                </ul>
-                            </li>
-                            <li class="category-left-li">
-                                <a href="#!">Trẻ em</a>
-                            </li>
-                            <li class="category-left-li">
-                                <a href="#!">Đồ Lót</a>
-                            </li>
-                            <li class="category-left-li">
-                                <a href="#!">Bộ sưu tập</a>
-                            </li>
-                            <li class="category-left-li">
-                                <a href="#!">Super Sale</a>
-                            </li>
-                        </ul>
+                <div class="cart-content row">
+                    <div class="cart-content-left">
+                        <table>
+                            <tr>
+                                <th>Sản phẩm</th>
+                                <th>Tên sản phẩm</th>
+                                <th>Màu</th>
+                                <th>Size</th>
+                                <th>SL</th>
+                                <th>Thành tiên</th>
+                                <th>Xóa</th>
+                            </tr>
+                            <tr>
+                                <td><img src="./assets/img/product/pro1.webp" alt=""></td>
+                                <td><p>Đầm ngắn thời trang</p></td>
+                                <td><div class="color"></div></td>
+                                <td><p>L</p></td>
+                                <td><input type="number" value="1" min="1"></td>
+                                <td><p>750.000 đ</p></td>
+                                <td><i class="fa-solid fa-xmark"></i></td>
+                            </tr>
+                            <tr>
+                                <td><img src="./assets/img/product/sp1.png" alt=""></td>
+                                <td><p>Áo hoddie thời trang</p></td>
+                                <td><div class="color" style="background: orange;"></div></td>
+                                <td><p>L</p></td>
+                                <td><input type="number" value="1" min="1"></td>
+                                <td><p>450.000 đ</p></td>
+                                <td><i class="fa-solid fa-xmark"></i></td>
+                            </tr>
+                        </table>
                     </div>
-                    <div class="category-right row">
-                        <div class="category-right-top-item">
-                            <p>HÀNG NỮ MỚI VỀ</p>
+                    <div class="cart-content-right">
+                        <table>
+                            <tr>
+                                <th colspan="2" style="font-size: 1.8rem; font-weight: 600;">TỔNG TIỀN GIỎ HÀNG</th>
+                            </tr>
+                            <tr>
+                                <td>Tổng sản phẩm</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Tổng tiền hàng</td>
+                                <td>1.200.000 đ</td>
+                            </tr>
+                            <tr>
+                                <td>Tạm tính</td>
+                                <td><p style="color: #333; font-weight: 600;">1.200.000 đ</p></td>
+                            </tr>
+                        </table>
+                        <div class="cart-content-right-text">
+                            <p>Bạn sẽ đc miễn phí ship khi đơn hàng có tổng giá trị trên 1.500.000đ</p>
+                            <p style="color: red; font-weight: 600;">Mua thêm <span style="font-size: 1.8rem;">100.000đ</span> để được miễn phí ship</p>
                         </div>
-                        <div class="category-right-top-item">
-                            <button>
-                                <span>Bộ lọc</span
-                                ><i class="fa-solid fa-sort-down"></i>
-                            </button>
+                        <div class="cart-content-right-btn row">
+                            <button>Tiếp tục mua sắm</button>
+                            <button>Thanh toán</button>
                         </div>
-                        <div class="category-right-top-item">
-                            <select name="" id="">
-                                <option value="">Xắp xếp</option>
-                                <option value="">Giá cao đến thấp</option>
-                                <option value="">Giá thấp đến cao</option>
-                            </select>
-                        </div>
-                        <div class="category-right-content row">
-                            <div class="category-right-content-item">
-                                <img
-                                    src="./assets/img/product/pro1.webp"
-                                    alt=""
-                                />
-                                <h2>Đầm ngắn thời trang</h2>
-                                <p>750.000 đ</p>
-                            </div>
-                            <div class="category-right-content-item">
-                                <img
-                                    src="./assets/img/product/sp2.png"
-                                    alt=""
-                                />
-                                <h2>Áo khoác hoddie thời trang</h2>
-                                <p>450.000 đ</p>
-                            </div>
-                            <div class="category-right-content-item">
-                                <img
-                                    src="./assets/img/product/sp3.png"
-                                    alt=""
-                                />
-                                <h2>Áo khoác hoddie thời trang</h2>
-                                <p>450.000 đ</p>
-                            </div>
-                            <div class="category-right-content-item">
-                                <img
-                                    src="./assets/img/product/sp3.png"
-                                    alt=""
-                                />
-                                <h2>Áo khoác hoddie thời trang</h2>
-                                <p>450.000 đ</p>
-                            </div>
-                            <div class="category-right-content-item">
-                                <img
-                                    src="./assets/img/product/sp2.png"
-                                    alt=""
-                                />
-                                <h2>Áo khoác hoddie thời trang</h2>
-                                <p>450.000 đ</p>
-                            </div>
-                            <div class="category-right-content-item">
-                                <img
-                                    src="./assets/img/product/sp1.png"
-                                    alt=""
-                                />
-                                <h2>Áo khoác hoddie thời trang</h2>
-                                <p>450.000 đ</p>
-                            </div>
-                            <div class="category-right-content-item">
-                                <img
-                                    src="./assets/img/product/sp3.png"
-                                    alt=""
-                                />
-                                <h2>Áo khoác hoddie thời trang</h2>
-                                <p>450.000 đ</p>
-                            </div>
-                            <div class="category-right-content-item">
-                                <img
-                                    src="./assets/img/product/sp1.png"
-                                    alt=""
-                                />
-                                <h2>Áo khoác hoddie thời trang</h2>
-                                <p>450.000 đ</p>
-                            </div>
-                        </div>
-                        <div class="category-right-bottom row">
-                            <div class="category-right-bottom-item">
-                                <p>Hiển thị 2 <span>|</span> 4 sản phẩm</p>
-                            </div>
-                            <div class="category-right-bottom-item">
-                                <p>
-                                    <span
-                                        >&#171;
-                                        <span>1 2 3 4 5</span> &#187;</span
-                                    >
-                                    Trang cuối
-                                </p>
-                            </div>
+                        <div class="cart-content-right-login">
+                            <p>Tài khoản fashion</p>
+                            <p>Hãy <a href="#!" style="color: #e6d73b;">Đăng nhập</a> vào tài khoản của bạn để tích điểm thành viên.</p>
                         </div>
                     </div>
                 </div>

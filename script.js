@@ -1,69 +1,77 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
-const header = $('header')
+const header = $("header");
 const imgContainer = $(".aspect-ratio-169");
 const imgPosition = $$(".aspect-ratio-169 img");
-const dotItem = $$('.dot')
+const dotItem = $$(".dot");
 
-let imgNumber = imgPosition.length
+let imgNumber = imgPosition.length;
 let index = 0;
 
 // Change slide when click dots
 imgPosition.forEach(function (img, index) {
     img.style.left = index * 100 + "%";
-    dotItem[index].onclick = function() {
-        slideChange(index)
-    }
+    dotItem[index].onclick = function () {
+        slideChange(index);
+    };
 });
 
-function imgSlide() {
-    index++;
-    if (index >= imgNumber) {
-        index = 0
-    }
-    slideChange(index)
-}
 
 function slideChange(index) {
-    imgContainer.style.left = "-" + index * 100 + "%"
-    const dotActive = $('.dot.active')
-    dotActive.classList.remove('active')
-    dotItem[index].classList.add('active')
+    imgContainer.style.left = "-" + index * 100 + "%";
+    const dotActive = $(".dot.active");
+    dotActive.classList.remove("active");
+    dotItem[index].classList.add("active");
 }
 
 // Menu fixed
 
-window.addEventListener('scroll', function() {
-    x = window.scrollY
+window.addEventListener("scroll", function () {
+    x = window.scrollY;
     if (x > 0) {
-        header.classList.add('sticky')
+        header.classList.add("sticky");
     } else {
-        header.classList.remove('sticky')
+        header.classList.remove("sticky");
     }
-})
+});
 
 // Menu sidebar category
 
-const itemsSidebar = $$('.category-left-li')
-itemsSidebar.forEach(function(menu, index) {
-    menu.addEventListener('click', function() {
-        menu.classList.toggle('block')
-    })
-})
+const itemsSidebar = $$(".category-left-li");
+itemsSidebar.forEach(function (menu, index) {
+    menu.addEventListener("click", function () {
+        menu.classList.toggle("block");
+    });
+});
 
 // Products
 
-// Click image o=in product
+const products = $$('.category-right-content-item')
+// const relatedProduct = $$('.product-related-item')
 
-const bigImg = $('.product-content-left-big-img img')
-const smallImg = $$('.product-content-left-small-img img')
-
-smallImg.forEach(function(img) {
-    img.addEventListener('click', function() {
-        bigImg.src = img.src
-    })
+products.forEach(function(product) {
+    product.onclick = function() {
+        window.location.href = './product.html'
+    }
 })
+
+// relatedProduct.forEach(function(product) {
+//     product.onclick = function() {
+//         window.location.href = './product.html'
+//     }
+// })
+
+// Click image in product
+
+const bigImg = $(".product-content-left-big-img img");
+const smallImg = $$(".product-content-left-small-img img");
+
+smallImg.forEach(function (img) {
+    img.addEventListener("click", function () {
+        bigImg.src = img.src;
+    });
+});
 
 // Tab UI
 
@@ -93,4 +101,10 @@ tabs.forEach((tab, index) => {
     };
 });
 
+// Cart page
 
+const btnBuy = $('.buy-btn')
+console.log(btnBuy)
+btnBuy.onclick = function() {
+    window.location.href = './cart.html'
+}
